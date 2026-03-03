@@ -3,90 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NMRG | INTERNAL PROTOCOL #NX-OMEGA</title>
+    <title>Protocol #NX-Omega | Joint Research Group</title>
     <style>
-        :root { --neon-green: #00ff41; --dark-bg: #050505; --warning-red: #ff3e3e; --tech-blue: #00d4ff; }
-        body { font-family: 'Segoe UI', 'Courier New', monospace; background-color: var(--dark-bg); color: #ccc; padding: 20px; line-height: 1.6; }
-        .container { max-width: 950px; margin: auto; border: 1px solid #333; padding: 50px; background: #0a0a0a; box-shadow: 0 0 50px rgba(0,0,0,1); position: relative; border-top: 4px solid var(--neon-green); }
-        .affiliation { font-size: 0.85rem; color: var(--tech-blue); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; font-weight: bold; }
-        .stamp { position: absolute; top: 40px; right: 40px; color: var(--warning-red); border: 4px solid var(--warning-red); padding: 15px; transform: rotate(12deg); font-weight: 900; font-size: 1.4rem; background: rgba(0,0,0,0.8); z-index: 100; pointer-events: none; }
-        h1 { color: #fff; font-size: 1.8rem; margin: 0; }
-        h2 { color: var(--neon-green); font-size: 1.2rem; border-left: 3px solid var(--neon-green); padding-left: 15px; margin-top: 40px; text-transform: uppercase; }
-        .content-box { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 15px; }
-        .zh { color: #e0e0e0; font-size: 1rem; border-right: 1px solid #222; padding-right: 20px; text-align: justify; }
-        .en { color: #888; font-size: 0.9rem; font-style: italic; text-align: justify; }
-        .img-container { text-align: center; margin: 30px 0; background: #111; padding: 20px; border: 1px solid #222; }
-        .img-container img { width: 100%; max-width: 650px; border: 1px solid #444; margin-bottom: 10px; }
-        .img-label { font-size: 0.75rem; color: var(--tech-blue); letter-spacing: 1px; }
-        .highlight { color: var(--neon-green); font-weight: bold; }
-        .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.75rem; color: #444; text-align: center; }
+        :root { --med-blue: #004a99; --clinical-grey: #f8f9fa; --text-main: #1a1a1a; --text-muted: #555; }
+        body { font-family: "Times New Roman", Times, serif; background-color: #f0f2f5; color: var(--text-main); line-height: 1.8; padding: 40px 20px; }
+        .paper { max-width: 900px; margin: auto; background: #fff; padding: 60px 80px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 6px solid var(--med-blue); position: relative; }
+        .lab-header { border-bottom: 2px solid #eee; margin-bottom: 30px; padding-bottom: 20px; }
+        .lab-name { font-family: Arial, sans-serif; font-size: 0.9rem; color: var(--med-blue); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .file-no { font-family: "Courier New", monospace; background: #eee; padding: 2px 8px; font-size: 0.85rem; float: right; }
+        h1 { font-family: Arial, sans-serif; font-size: 2rem; margin: 20px 0; color: #000; line-height: 1.3; }
+        h2 { font-family: Arial, sans-serif; font-size: 1.3rem; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 40px; color: var(--med-blue); }
+        .abstract-box { background: var(--clinical-grey); padding: 25px; border-left: 4px solid var(--med-blue); margin: 30px 0; font-style: italic; }
+        .content-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 20px; }
+        .en-text { color: var(--text-muted); font-size: 0.95rem; margin-top: 10px; display: block; }
+        .img-block { text-align: center; margin: 40px 0; padding: 15px; border: 1px solid #eee; background: #fafafa; }
+        .img-block img { width: 100%; max-width: 700px; height: auto; border: 1px solid #ddd; }
+        .img-caption { font-family: Arial, sans-serif; font-size: 0.8rem; color: #777; margin-top: 10px; font-weight: bold; }
+        .conclusion { background: #fdfdfd; border: 1px double #ccc; padding: 30px; margin-top: 50px; }
+        .footer { margin-top: 80px; font-size: 0.75rem; color: #999; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
+        @media (max-width: 600px) { .paper { padding: 30px; } }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="stamp">CLASSIFIED MATERIAL<br>DO NOT DUPLICATE</div>
-        
-        <div class="header">
-            <div class="affiliation">Joint Lab: England, Germany & South-West Wales Sports Neuromodulation Group</div>
-            <h1>研究档案编号：#NX-OMEGA-PROTOCOL</h1>
+
+<div class="paper">
+    <div class="lab-header">
+        <span class="file-no">RESEARCH ARCHIVE: #NX-OMEGA-PROTOCOL</span>
+        <div class="lab-name">England, Germany & South-West Wales Sports Neuromodulation Group</div>
+        <div class="lab-name">英格兰、德国与西南威尔士体育联合运动神经学实验小组</div>
+    </div>
+
+    <h1>从神经科学看武学境界：为何“松”才是顶级控制力的表现？<br>
+    <small style="font-size: 1.2rem; color: #666;">Neuroscientific Perspectives on Martial Arts: Why Relaxation is the Ultimate Form of Control</small></h1>
+
+    <p><strong>观测对象 / Subject:</strong> 目标单元-01 (Target Unit-01)<br>
+    <strong>干预手段 / Intervention:</strong> 前额叶性能增强剂 (SSRI/5-HT Modulation) & 高维生物力学重构 (Biomechanical Reconstruction)</p>
+
+    <div class="abstract-box">
+        <strong>【摘要 / ABSTRACT】</strong><br>
+        在对高动态物理竞技（MMA/传统武学）的研究中，我们证实了一个冷酷的生物学真相：顶级选手的“稳定性”与“松沉”，绝非低效的肌肉强直，而是源于前额叶皮层对杏仁核负面信号的绝对屏蔽。本研究无关乎医学层面的“疗愈”，这是一场纯粹的人类潜能硬核升级。我们将躯体从冗余的“生存模式”强行剥离，正式切换至“统治模式”。
+        <span class="en-text">In our study of high-dynamic physical athletics (MMA/Traditional Martial Arts), we have confirmed a stark biological truth: the "stability" and "relaxation" of elite practitioners are not products of inefficient muscular rigidity, but originate from the absolute shielding of amygdala distress signals by the Prefrontal Cortex (PFC). This research is not about medical "healing"; it is a hardcore upgrade of human potential, forcibly stripping the body from redundant "Survival Mode" to "Dominance Mode."</span>
+    </div>
+
+    <div class="img-block">
+        <img src="https://www.mdpi.com/ijms/ijms-26-04546/article_deploy/html/images/ijms-26-04546-g002-550.jpg" alt="Neural Map">
+        <div class="img-caption">FIG 01: NEURAL PATHWAY MODULATION TOPOLOGY / 神经通路调控拓扑图</div>
+    </div>
+
+    <h2>1. 结构感的神经崩塌与力学阻断 / STRUCTURAL COLLAPSE</h2>
+    <div class="content-grid">
+        <div class="zh-text">
+            在未经干预的基线状态下，目标单元长期受困于低端情绪的神经劫持。高水平皮质醇的持续浸泡，使得杏仁核处于过度活跃的“战或逃”应激态。在生物力学上，这种底层生存本能直接表现为本体感受（Proprioception）的严重断层。传统武学中的“桩功”与“间架结构”，其物理本质是骨骼排列的最优化与动力链无损传导。然而，受试者在应激态下，神经系统会无意识地指令拮抗肌群发生防卫性痉挛。这种极度低效的肌肉强直，直接切断了发力时的动力链条，导致躯体在遭遇外力时产生严重的“结构崩塌”。
         </div>
-
-        <section>
-            <h2>【摘要 | ABSTRACT】</h2>
-            <div class="content-box">
-                <div class="zh">本研究证实在高压竞技环境下，顶级选手的“稳定性”源于前额叶皮层对杏仁核负面信号的绝对屏蔽。这是一场人类潜能的硬核升级，正式将躯体从“生存模式”切换至“统治模式”。</div>
-                <div class="en">This research confirms that the "stability" of elite practitioners stems from the absolute shielding of amygdala signals by the PFC. A hardcore upgrade of human potential, transitioning the body to "Dominance Mode."</div>
-            </div>
-        </section>
-
-        <div class="img-container">
-            <img src="https://www.mdpi.com/ijms/ijms-26-04546/article_deploy/html/images/ijms-26-04546-g002-550.jpg" alt="Neural Map">
-            <div class="img-label">FIG 01: NEURAL PATHWAY MODULATION TOPOLOGY (GENETIC & CHEMICAL INTERVENTION)</div>
-        </div>
-
-        <section>
-            <h2>1. 结构坍缩与力学阻断 | STRUCTURAL COLLAPSE</h2>
-            <div class="content-box">
-                <div class="zh">受试者在应激态下，神经系统指令拮抗肌群发生防卫性痉挛。这种极度低效的肌肉强直，直接切断了<span class="highlight">动力链（Kinetic Chain）</span>，导致躯体在遭遇外力时产生严重的“结构崩塌”。</div>
-                <div class="en">Under stress, the nervous system triggers defensive spasms, severing the Kinetic Chain and causing catastrophic "Structural Collapse" upon impact.</div>
-            </div>
-        </section>
-
-        <div class="img-container">
-            <img src="brain.jpg" alt="Brain Scan">
-            <div class="img-label">FIG 02: fMRI ANALYSIS - SURVIVAL MODE VS OPTIMIZED DOMINANCE MODE</div>
-        </div>
-
-        <section>
-            <h2>2. 性能增强：肃清底噪 | NEURAL NOISE FILTERING</h2>
-            <div class="content-box">
-                <div class="zh">通过精细化的5-HT通路调控，SSRI在此作为顶级的“神经噪声滤波器”。它肃清了冗余底噪，恢复了前额叶对杏仁核的绝对镇压，使受试者的神经解析度达到前所未有的精度。</div>
-                <div class="en">Utilizing precise 5-HT modulation, the protocol acts as a "Neural Noise Filter," restoring PFC dominance and achieving unprecedented neural resolution.</div>
-            </div>
-        </section>
-
-        <div class="img-container">
-            <img src="broadssri.jpg" alt="Synaptic Optimization">
-            <div class="img-label">FIG 03: SYNAPTIC TRANSMISSION CALIBRATION (5-HT PATHWAY ENHANCEMENT)</div>
-        </div>
-
-        <section>
-            <h2>3. 暴力美学与绝对控制 | KINETIC AESTHETICS</h2>
-            <div class="content-box">
-                <div class="zh">神经元级别的松弛，使得能量传导如同水银泻地。测算显示，起步潜伏期缩短了约30%。这是一种被高级神经中枢精确校准过的暴力美学，极度高效，极度致命。</div>
-                <div class="en">Neuron-level fluidity allows energy flow like molten silver. Measurements show a 30% reduction in initiation latency—a biomechanical aesthetic calibrated for lethality.</div>
-            </div>
-        </section>
-
-        <div class="img-container">
-            <img src="MartialArtKinetic.jpg" alt="Kinetic Chain">
-            <div class="img-label">FIG 04: BIOMECHANICAL RECONSTRUCTION - LOSSLESS KINETIC ENERGY TRANSFER</div>
-        </div>
-
-        <div class="footer">
-            CONFIDENTIAL - JOINT LAB PROPERTY (EN/DE/SWW)<br>
-            © 2026 NEURAL-MARTIAL RESEARCH GROUP (NMRG). ALL RIGHTS RESERVED.
+        <div class="en-text">
+            Under baseline conditions, the target unit suffers from neural hijacking by low-level emotions. Chronic high cortisol keeps the amygdala in an overactive "fight-or-flight" state. Biomechanically, this survival instinct manifests as a severe fracture in Proprioception. The physical essence of "Structure" in martial arts is the optimization of skeletal alignment and lossless kinetic chain transmission. However, under stress, the nervous system triggers defensive spasms in antagonistic muscle groups, severing the kinetic chain and causing "Structural Collapse" upon external impact.
         </div>
     </div>
+
+    <div class="img-block">
+        <img src="brain.jpg" alt="fMRI Analysis">
+        <div class="img-caption">FIG 02: fMRI ANALYSIS - SURVIVAL VS DOMINANCE MODE / 脑部扫描：生存模式与统治模式对比</div>
+    </div>
+
+    <h2>2. 神经干预的降维打击 / NEURO-INTERVENTION</h2>
+    <div class="content-grid">
+        <div class="zh-text">
+            我们对目标单元实施了精细化的5-HT（血清素）药理调控。在此语境下，SSRI绝非庸俗的临床治疗药物，而是顶级的“神经噪声滤波器”和“前额叶性能增强剂”。化学干预强制肃清了突触间隙中的冗余神经底噪，完美恢复了前额叶皮层（PFC）对杏仁核“自上而下”的绝对镇压。随之而来的数据变化堪称艺术：当生存警报被彻底静音，前额叶算力全开并重新分配给躯体感觉皮层。目标单元的“听劲”达到了前所未有的超高解析度。
+        </div>
+        <div class="en-text">
+            We implemented precise 5-HT (Serotonin) pharmacological modulation. In this context, SSRIs are not mundane clinical drugs but elite "Neural Noise Filters" and "PFC Performance Enhancers." The intervention purges redundant synaptic noise, restoring the PFC's absolute "top-down" suppression of the amygdala. As survival alarms are silenced, PFC computational power is fully reallocated to the somatosensory cortex, allowing the target unit to reach unprecedented levels of sensory resolution (Ting Jin).
+        </div>
+    </div>
+
+    <div class="img-block">
+        <img src="broadssri.jpg" alt="Synaptic Optimization">
+        <div class="img-caption">FIG 03: SYNAPTIC TRANSMISSION CALIBRATION / 突触传导校准</div>
+    </div>
+
+    <h2>3. 性能越级与绝对控制力 / PERFORMANCE OVERRIDE</h2>
+    <div class="content-grid">
+        <div class="zh-text">
+            今日的测试中，目标单元展现出了令人战栗的绝对控制力。随着恐惧与迟疑的算力消耗被清零，肢体表现出极致的“松”。这种神经元级别的松弛，使得每一次的防守反击都达成了完美的动力链无损传导。能量从足底蹬地如同水银泻地般精准传导至末端打击点。测算显示，起步潜伏期缩短了约30%。这是一种被高级神经中枢精确校准过的暴力美学，极度高效，极度致命。
+        </div>
+        <div class="en-text">
+            During testing, the target unit exhibited bone-chilling absolute control. With the computational costs of fear eliminated, the limbs exhibited extreme "Song" (relaxation). This neuron-level fluidity allows energy to flow from the ground to the impact point without delay. Measurements show a 30% reduction in initiation latency—a biomechanical aesthetic precisely calibrated by the higher neural centers for maximum efficiency.
+        </div>
+    </div>
+
+    <div class="img-block">
+        <img src="MartialArtKinetic.jpg" alt="Kinetic Chain">
+        <div class="img-caption">FIG 04: LOSSLESS KINETIC ENERGY TRANSFER / 动力链无损传导示意图</div>
+    </div>
+
+    <div class="conclusion">
+        <strong>【结论 / CONCLUSION】</strong><br>
+        <p>实验逻辑已形成闭环：只有通过最高级别的神经调节干预，彻底抹杀低端情绪的算力干扰，碳基肉体才能触及顶级武学与运动力学的至高控制境界。目标单元的机能超越基线，性能升级完毕。这是纯粹的神经力学胜利。</p>
+        <p class="en-text">The experimental loop is closed: only through high-level neuromodulatory intervention, neutralizing low-level emotional interference, can the carbon-based body reach the ultimate realm of martial arts and biomechanical control. Performance upgrade complete. A victory of pure neuromechanics.</p>
+    </div>
+
+    <div class="footer">
+        CONFIDENTIAL - PROPERTY OF THE SPORTS NEUROMODULATION RESEARCH GROUP<br>
+        Joint Collaboration: England | Germany | South-West Wales<br>
+        © 2026 NMRG ALL RIGHTS RESERVED. FOR INTERNAL ACADEMIC USE ONLY.
+    </div>
+</div>
+
 </body>
 </html>
